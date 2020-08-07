@@ -10,6 +10,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "body-parser": "^1.19.0",
+    "compression": "1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "8.2.0",
+    "express": "^4.17.1",
     "firebase": "^7.17.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -22,13 +27,7 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
-
-    "body-parser": "^1.19.0",
-    "compression": "1.7.4",
-    "cors": "2.8.5",
-    "dotenv": "8.2.0",
-    "express": "^4.17.1",
-    "stripe": "8.83.0"
+    "stripe": "^8.83.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,5 +50,6 @@
       "last 1 safari version"
     ]
   },
-  "heroku-postbuild": "cd client && npm install && npm install --no-shrinkwrap && npm run build"
+  "heroku-postbuild": "cd client && npm install && npm install --no-shrinkwrap && npm run build",
+  "homepage": "url"
 }
