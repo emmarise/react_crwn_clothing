@@ -1,6 +1,10 @@
 {
   "name": "crwn-clothing",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.14.7"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -17,7 +21,14 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
-    "reselect": "^4.0.0"
+    "reselect": "^4.0.0",
+
+    "body-parser": "^1.19.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "^4.17.1",
+    "stripe": "8.83.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "heroku-postbuild": "cd client && npm install && npm install --no-shrinkwrap && npm run build"
 }
